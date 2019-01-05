@@ -1,0 +1,72 @@
+
+@font-face {
+	font-family:"Lobster_1.3";
+	src:url("fonts/Lobster_1.3.otf") format("opentype");
+
+}
+@font-face {
+	font-family:"couriel";
+	src:url("fonts/cour.ttf") format("truetype");
+
+}
+.container {
+	background-color:#bee;
+	border-radius:10px;
+	margin-top:20px;
+	box-shadow: 0px 0px 20px #aaa;
+}
+.cabe {
+	background-color:#000;
+	color:#fff;
+	margin-top:10px;
+	height:100px;
+	font-family: "Lobster_1.3";
+	size:;
+	padding-top:10px;
+	padding-left:20px;
+	box-shadow: 0px 10px 10px #aaa;
+}
+.cabe1 {
+	background-color:#000;
+	color:#fff;
+	margin-top:5px;
+	height:70px;
+	font-family:arial;
+	size:;
+	padding-top:10px;
+	padding-left:20px;
+	box-shadow: 0px 10px 10px #aaa;
+}
+.now {
+	color:#ff0;
+}
+.next {
+	margin-top:30px;
+	font-size:17px;
+	margin-bottom:20px;
+}
+.next1 {
+	margin-top:50px;
+	font-size:17px;
+	margin-bottom:20px;
+}
+.footest {
+	margin-top:0px;
+	text-align:center;
+	font-weight: bold;
+	text-decoration:;
+	color:#0b0;
+}
+a:link {
+	color:#0a0;
+}
+a:visited {
+	color:#0a0;
+}
+.show {
+	border:1px dashed #FFA500;
+	background-color:#FFFACD;
+	height:500px;
+	width:100%;
+	margin-bottom: 30px;
+}

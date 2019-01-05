@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Practica de formularios</title>
+</head>
+<body>
+	<form action=”http://www.host.com/vfor.asp” method="post">
+		escriba su usuario:
+		<br>
+		<input type="text" name="usuario" size="10" maxlength="12">
+		<p>
+		Añadir un campo de tipo contraseña
+		<INPUT TYPE="password" NAME="clave" SIZE="10" MAXLENGTH="12">
+		<p>
+		Introduzca sus sugerencias o comentarios:
+		<TEXTAREA
+		NAME="Comentarios" ROWS="6" COLS="40">
+		</TEXTAREA>
+		<p>
+		¿cómo contacto con nosotros?
+		<select name="contacto">
+			<option value=”casualidad”>por casualidad </option>
+			<option value=”periodico”>por el periodico </option>
+			<option value=”buscadores”>en los buscadores </option>
+			<option value=”comentario”>me lo comentaron </option>
+		</select >
+		<p>
+		¿Cuál es su sistema operativo preferido?
+		<BR>
+		<INPUT TYPE="radio" NAME="SistemaOperativo" VALUE="NT" CHECKED>
+		Windows NT
+		<INPUT TYPE="radio"	NAME="SistemaOperativo" VALUE="Mac">
+		Mac
+		<INPUT TYPE="radio" NAME="SistemaOperativo" VALUE="Unix">
+		Unix
+		<input type="submit" value="enviar datos">
+		<p>
+		<input type="reset" value="borrar datos">
+	</form>
+</body>
+</html>

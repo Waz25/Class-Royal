@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="es-es">
+    <head>
+        <title>JS Class - 5th Lesson</title>
+        <link rel="icon" type="image/png" href="images/js.png"/>
+        <meta charset="utf-8">
+        <meta name="keywords" description="curso web, JavaScript, js, Web Learning,">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="estilos.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
+	</head>
+	<body>
+	<div class="container">
+		<div class="cabe1">
+				<h2>5. Estructuras secuenciales de programaci&oacute;n.<h2>
+		</div>
+		
+		<div class="next1">
+			Cuando en un problema sólo participan operaciones, entradas y salidas se la denomina estructura secuencial.<br>
+El problema anterior, donde se ingresa el nombre de una persona y su edad se trata de una estructura secuencial.
+<br>
+Ejemplo de otro algoritmo con estructura secuencial: Realizar la carga de dos números por teclado e imprimir su suma y su producto:<br><br>
+<textarea class="show">
+  <html>
+  <head>
+  <script type="text/javascript">
+    var valor1;
+    var valor2;
+    valor1=prompt('Ingrese primer número:','');
+    valor2=prompt('Ingrese segundo número','');
+    var suma=parseInt(valor1)+parseInt(valor2);
+    var producto=parseInt(valor1)*parseInt(valor2);
+    document.write('La suma es ');
+    document.write(suma);
+    document.write('<br>');
+    document.write('El producto es ');
+    document.write(producto);
+  </script>
+  </head>
+  <body>
+  </body>
+  </html>
+</textarea>
+Lo primero que debemos tener en cuenta es que si queremos que el operador + sume los contenidos de los valores numéricos ingresados por teclado, debemos llamar a la función parseInt y pasar como parámetro las variables valor1 y valor2 sucesivamente. Con esto logramos que el operador más, sume las variables como enteros y no como cadenas de caracteres. Si por ejemplo sumamos 1 + 1 sin utilizar la función parseInt el resultado será 11 en lugar de 2, ya que el operador + concatena las dos cadenas.<br>
+En JavaScript, como no podemos indicarle de qué tipo es la variable, requiere mucho más cuidado cuando operamos con sus contenidos.<br>
+Este problema es secuencial ya que ingresamos dos valores por teclado, luego hacemos dos operaciones y por último mostramos los resultados.
+</p>
+
+		</div>
+		<hr style="border:1px solid #ccc;">
+		<div class="footest">
+			<div class="row">
+		      	<div class="col-lg-4" >
+			        <p><a href="d4.html">Anterior</a></p>
+		      	</div>
+		      	<div class="col-lg-4">
+			        <p><a href="index.html">Retornar Inicio</a></p>
+		      	</div>
+		      	<div class="col-lg-4">
+			       	<p><a href="d6.html">Siguiente</a></p>
+		      	</div>
+		    </div>
+		</div>
+	
+	</div>
+	
+	</body>
+</html>

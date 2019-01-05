@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html lang="es-es">
+    <head>
+        <title>JS Class - 7th Lesson</title>
+        <link rel="icon" type="image/png" href="images/js.png"/>
+        <meta charset="utf-8">
+        <meta name="keywords" description="curso web, JavaScript, js, Web Learning,">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="estilos.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
+	<script type="text/javascript" language="javascript">
+	function abrirVentana(url) {
+    window.open("ex2.html", "nuevo", "directories=no, location=no, menubar=no, scrollbars=yes, statusbar=no, tittlebar=no, width=400, height=400");
+	}
+	</script>
+	</head>
+	<body>
+	<div class="container">
+		<div class="cabe1">
+				<h2>7. Estructuras condicionales compuestas. - Problema a Resolver (PTS)<h2>
+		</div>
+		
+		<div class="next1">
+			<ol>
+<li>
+Realizar un programa que lea por teclado dos números, si el primero es mayor al segundo informar su suma y diferencia, en caso contrario informar el producto y la división del primero respecto al segundo.
+</li>
+<li>
+Se ingresan tres notas de un alumno, si el promedio es mayor o igual a 4 mostrar un mensaje 'regular', sino 'reprobado'.
+</li>
+<li>
+Se ingresa por teclado un número positivo de uno o dos dígitos (1..99) mostrar un mensaje indicando si el número tiene uno o dos dígitos (recordar de convertir a entero con parseInt para preguntar posteriormente por una variable entera). Tener en cuenta qué condición debe cumplirse para tener dos dígitos, un número entero.
+</li>
+</ol>
+
+<br/><br/>
+		
+			<a href="javascript:void(0);" onclick="if (this.parentNode.nextSibling.childNodes[0].style.display != '') { this.parentNode.nextSibling.childNodes[0].style.display = ''; } else { this.parentNode.nextSibling.childNodes[0].style.display = 'none';}" ><font style="color:#00f;">Soluci&oacute;n</font></a>
+			</div><div><div class="spoiler" style="display: none;">
+			<textarea class="show" style="height:2000px; font-family:couriel;">
+Problema 1.
+
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+  var num1,num2;
+  num1=prompt('Ingrese el primer número:','');
+  num2=prompt('Ingrese el segundo número:','');
+  num1=parseInt(num1);
+  num2=parseInt(num2);
+  if (num1>num2)
+  {
+    var suma,diferencia;
+    suma=num1+num2;
+    diferencia=num1-num2;
+    document.write('La suma es:'+suma);
+    document.write('<br>');
+    document.write('La diferencia es:'+diferencia);
+  }
+  else
+  {
+    var producto,division;
+    producto=num1*num2;
+    division=num1/num2;
+    document.write('El producto es '+producto);
+    document.write('<br>');
+    document.write('La división del primero respecto al segundo es:'+division);
+  }
+</script>
+</body>
+</html>
+
+
+
+Problema 2.
+
+
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+  var nota1,nota2,nota3;
+  nota1=prompt('Ingrese primer nota:','');
+  nota1=parseInt(nota1);
+  nota2=prompt('Ingrese segunda nota:','');
+  nota2=parseInt(nota2);
+  nota3=prompt('Ingrese tercer nota:','');
+  nota3=parseInt(nota3);
+  var suma;
+  suma=nota1+nota2+nota3;
+  var promedio;
+  promedio=suma/3;
+  if (promedio>=4)
+  {
+    document.write('Regular');
+  }
+  else
+  {
+    document.write('Reprobado');
+  }
+
+</script>
+
+</body>
+</html>
+
+
+
+Problema 3.     
+
+
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+  var num;
+  num=prompt('Ingrese un valor comprendido entre 1 y 99:','');
+  num=parseInt(num);
+  if (num<10)
+  {
+    document.write('El valor ingresado tiene un dígito');
+  }
+  else
+  {
+    document.write('El valor ingresado tiene dos dígitos');
+  }
+</script>
+
+</body>
+</html>
+			</textarea>
+			</div></div>
+		</div>
+		<hr style="border:1px solid #ccc;">
+		<div class="footest">
+			<div class="row">
+		      	<div class="col-lg-4">
+			        <p><a href="pts6.html">Anterior</a></p>
+		      	</div>
+		      	<div class="col-lg-4">
+			        <p><a href="index.html">Retornar Inicio</a></p>
+		      	</div>
+		      	<div class="col-lg-4">
+			       	<p><a href="pts8.html">Siguiente</a></p>
+		      	</div>
+		    </div>
+		</div>
+	
+	</div>
+	
+	</body>
+</html>

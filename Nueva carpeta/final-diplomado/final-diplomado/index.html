@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Aula Virtual</title>
+		<link rel="icon" type="image/png" href="icon.png"/>
+		<link rel="stylesheet" href="css.css" type="text/css">
+		<link href="css/bootstrap.min.css" rel="stylesheet"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript">
+			function validar(){
+
+				if (document.form.txtusuario.value == "usuario" && document.form.txtcontra.value==12345)
+				{
+				    window.open('pres.html');
+				}
+	
+
+				else {
+
+					    alert('USUARIO: usuario ------- PASS: 12345');
+
+					document.form.submit;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<center>
+				<h1>Aul@ Virtual - Programaci&oacute;n Web</h1>
+				<div class="falsabarra"></div>
+				<h3>1<sup>ra</sup> Muestra de Proyectos Asignados:</h3>
+			</center>
+			<br/>
+			<div class="cuerpo">
+				<div class="userbox">				
+					<span class="inicia">Inicia sesi&oacute;n para visualizar proyectos</span>
+					<form class="formed" name="form" action="" method="post">
+						<input type="text" name="txtusuario" placeholder="Usuario">
+						<input type="password" name="txtcontra" placeholder="Contrase&ntilde;a">
+						<input type="submit" value="Entrar" onclick="validar()">  
+					</form>
+				</div>
+				<div class="">
+					<div class="descripgral">
+						El objetivo general de este sitio es mostrar la asignaci&oacute;n final del diplomado de Introducci&oacute;n a la Programaci&oacute;n web, asignado por la Prof. Franshesca Corcino. Espero que la vista sea agradable para ganarme bien mis puntos.
+					</div>
+					<div class="mision">
+						1. El objetivo general de este sitio es mostrar la asignaci&oacute;n final del diplomado de Introducci&oacute;n a la Programaci&oacute;n web, asignado por la Prof. Franshesca Corcino. Espero que la vista sea agradable para ganarme bien mis puntos.
+					</div>
+					<div class="vision">
+						2. El objetivo general de este sitio es mostrar la asignaci&oacute;n final del diplomado de Introducci&oacute;n a la Programaci&oacute;n web, asignado por la Prof. Franshesca Corcino. Espero que la vista sea agradable para ganarme bien mis puntos.
+					</div>
+					<div class="valores">
+						3. El objetivo general de este sitio es mostrar la asignaci&oacute;n final del diplomado de Introducci&oacute;n a la Programaci&oacute;n web, asignado por la Prof. Franshesca Corcino. Espero que la vista sea agradable para ganarme bien mis puntos.
+					</div>
+					<div class="valclass">
+						4. El objetivo general de este sitio es mostrar la asignaci&oacute;n final del diplomado de Introducci&oacute;n a la Programaci&oacute;n web, asignado por la Prof. Franshesca Corcino. Espero que la vista sea agradable para ganarme bien mis puntos.
+					</div>
+				</div>		
+			</div>
+		</div>
+	</body>
+</html>

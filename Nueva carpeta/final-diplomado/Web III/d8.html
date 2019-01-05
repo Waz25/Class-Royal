@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="es-es">
+    <head>
+        <title>JS Class - 8th Lesson</title>
+        <link rel="icon" type="image/png" href="images/js.png"/>
+        <meta charset="utf-8">
+        <meta name="keywords" description="curso web, JavaScript, js, Web Learning,">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="estilos.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
+	</head>
+	<body>
+	<div class="container">
+		<div class="cabe1">
+				<h2>8. Estructuras condicionales anidadas.<h2>
+		</div>
+		
+		<div class="next1">
+			Decimos que una estructura condicional es anidada cuando por la rama del verdadero o el falso de una estructura condicional hay otra estructura condicional.<br>
+Ejemplo: Confeccionar un programa que pida por teclado tres notas de un alumno, calcule el promedio e imprima alguno de estos mensajes:<br>
+Si el promedio es >=7 mostrar "Promocionado".<br>
+Si el promedio es >=4 y <7 mostrar "Regular".<br>
+Si el promedio es <4 mostrar "Reprobado".<br>
+Solución:<br><br>
+<textarea class="show" style="height:850px;">
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+  var nota1,nota2,nota3;
+  nota1=prompt('Ingrese 1ra. nota:','');
+  nota2=prompt('Ingrese 2da. nota:','');
+  nota3=prompt('Ingrese 3ra. nota:','');
+  //Convertimos los 3 string en enteros
+  nota1=parseInt(nota1);
+  nota2=parseInt(nota2);
+  nota3=parseInt(nota3);
+  var pro;
+  pro=(nota1+nota2+nota3)/3;
+  if (pro>=7)
+  {
+    document.write('promocionado');
+  }
+  else
+  {
+    if (pro>=4)
+    {
+      document.write('regular');
+    }
+    else
+    {
+      document.write('reprobado');
+    }
+  }
+</script>
+</body>
+</html>
+</textarea>
+Analicemos el siguiente programa. Se ingresan tres string por teclado que representan las notas de un alumno, se transformas a variables enteras y se obtiene el promedio sumando los tres valores y dividiendo por 3 dicho resultado.<br>
+Primeramente preguntamos si el promedio es superior o igual a 7, en caso afirmativo por la rama del verdadero de la estructura condicional mostramos un mensaje que indique 'Promocionado' (con comillas indicamos un texto que debe imprimirse en pantalla).<br>
+En caso que la condición nos de falso, por la rama del falso aparece otra estructura condicional, porque todavía debemos averiguar si el promedio del alumno es superior o igual a cuatro o inferior a cuatro.<br>
+<br>
+Los comentarios en JavaScript los hacemos disponiendo dos barras previas al comentario (los comentario en tiempo de ejecución no son tenidos en cuenta
+y tienen por objetivos de documentar el programa para futuras modificaciones):
+<pre>
+//Convertimos los 3 string en enteros
+</pre>
+Si queremos disponer varias líneas de comentarios tenemos como alternativa:
+<pre>
+/*
+linea de comentario 1.
+linea de comentario 2.
+etc.
+*/
+</pre>
+Es decir encerramos el bloque con los caracteres /* */
+
+</p>
+		</div>
+		<hr style="border:1px solid #ccc;">
+		<div class="footest">
+			<div class="row">
+		      	<div class="col-lg-4" >
+			        <p><a href="d7.html">Anterior</a></p>
+		      	</div>
+		      	<div class="col-lg-4">
+			        <p><a href="index.html">Retornar Inicio</a></p>
+		      	</div>
+		      	<div class="col-lg-4">
+			       	<p><a href="d9.html">Siguiente</a></p>
+		      	</div>
+		    </div>
+		</div>
+	
+	</div>
+	
+	</body>
+</html>

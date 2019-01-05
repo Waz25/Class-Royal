@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="es-es">
+    <head>
+        <title>JS Class - 3rd Lesson</title>
+        <link rel="icon" type="image/png" href="images/js.png"/>
+        <meta charset="utf-8">
+        <meta name="keywords" description="curso web, JavaScript, js, Web Learning,">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="estilos.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
+	</head>
+	<body>
+	<div class="container">
+		<div class="cabe1">
+				<h2>3. Variables.<h2>
+		</div>
+		
+		<div class="next1">
+			
+			Una variable es un depósito donde hay un valor. Consta de un nombre y pertenece a un tipo (númerico, cadena de caracteres, etc.)<br>
+			Tipos de variable:<br>
+			Una variable puede almacenar:<br>
+			Valores Enteros (100, 260, etc.)<br>
+			Valores Reales (1.24, 2.90, 5.01, etc.)<br>
+			Cadenas de caracteres ('Juan', 'Compras', 'Listado', etc.)<br>
+			Valores lógicos (true,false)<br>
+			Existen otros tipos de variables que veremos más adelante.
+			<br>
+			<br>
+			Las variables son nombres que ponemos a los lugares donde almacenamos la información. En JavaScript, deben comenzar por una letra o un subrayado (_), pudiendo haber además dígitos entre los demás caracteres. Una variable no puede tener el mismo nombre de una palabra clave del lenguaje.
+			<br>
+			Una variable se define anteponiéndole la palabra clave var:<br>
+			var dia;
+			<br>
+			se pueden declarar varias variables en una misma línea:
+			<br>
+			var dia, mes, anio;
+			<br>
+			a una variable se la puede definir e inmediatamente inicializarla con un valor:
+			<br>
+			var edad=20;
+			<br>
+			o en su defecto en dos pasos:
+			<br>
+			var edad;<br>
+			edad=20;<br>
+			<br>
+			<br>
+			Elección del nombre de una variable:
+			<br>
+			Debemos elegir nombres de variables representativos. En el ejemplo anterior los nombres dia, mes, anio son lo suficientemente claros para darnos una idea acabada sobre su contenido, una mala elección de nombres hubiera sido llamarlas a,b y c. Podemos darle otros buenos nombres. Otros no son tan representativos, por ejemplo d, m, a. Posiblemente cuando estemos resolviendo un problema dicho nombre nos recuerde que almacenamos el dia, pero pasado un tiempo lo olvidaríamos.<br>
+			<br>
+			Impresión de variables en una página HTML.<br>
+			Para mostrar el contenido de una variable en una página utilizamos el objeto document y llamamos a la función write.<br>
+			En el siguiente ejemplo definimos una serie de variables y las mostramos en la página:<br><br>
+			<textarea class="show">
+<html>
+  <head>
+  </head>
+  <body>
+  <script type="text/javascript">
+    var nombre='Juan';
+    var edad=10;
+    var altura=1.92;
+    var casado=false;
+    document.write(nombre);
+    document.write('<br>');
+    document.write(edad); 
+    document.write('<br>');
+    document.write(altura); 
+    document.write('<br>');
+    document.write(casado); 
+  </script>
+  </body>
+  </html>
+
+			</textarea>
+			Cuando imprimimos una variable, no la debemos disponer entre simples comillas (en caso de hacer esto, aparecerá el nombre de la variable y no su contenido)<br>
+			Los valores de las variables que almacenan nombres (es decir, son cadenas de caracteres) deben ir encerradas entre comillas simples o dobles. Los valores de las variables enteras (en este ejemplo la variable edad) y reales no deben ir encerradas entre comillas. Cada instrucción finaliza con un punto y coma.<br>
+			Las variables de tipo boolean pueden almacenar solo dos valores: true o false.<br>
+			El resultado al visualizar la página debe ser 4 líneas similares a éstas:<br>
+			<br>
+			Juan<br>
+			10<br>
+			1.92<br>
+			false<br>
+			<br>
+			Es decir que se muestran los contenidos de las 4 variables. Una variable es de un tipo determinado cuando le asignamos un valor:<br>
+			<pre>
+var edad=10;
+			</pre>
+			Es de tipo entera ya que le asignamos un valor entero.
+			<br>
+			<pre>
+var nombre='juan';
+			</pre>
+			Es de tipo cadena.
+			<br>
+			Para mostrar el contenido de una variable en una página debemos utilizar la función 'write' que pertenece al objeto document.
+			Recordemos que el lenguaje JavaScript es sensible a mayúsculas y minúsculas y no será lo mismo si tipeamos:
+			<br>
+			  Document.Write(nombre);
+			<br>
+			Esto porque no existe el objeto 'Document' sino el objeto 'document' (con d minúscula), lo mismo no existe la función 'Write' sino 'write', este es un error muy común cuando comenzamos a programar en JavaScript<br>
+			</p>
+
+		</div>
+		<hr style="border:1px solid #ccc;">
+		<div class="footest">
+			<div class="row">
+		      	<div class="col-lg-4" >
+			        <p><a href="d2.html">Anterior</a></p>
+		      	</div>
+		      	<div class="col-lg-4">
+			        <p><a href="index.html">Retornar Inicio</a></p>
+		      	</div>
+		      	<div class="col-lg-4">
+			       	<p><a href="d4.html">Siguiente</a></p>
+		      	</div>
+		    </div>
+		</div>
+	
+	</div>
+	
+	</body>
+</html>

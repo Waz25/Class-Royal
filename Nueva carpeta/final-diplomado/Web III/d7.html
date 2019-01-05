@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="es-es">
+    <head>
+        <title>JS Class - 7th Lesson</title>
+        <link rel="icon" type="image/png" href="images/js.png"/>
+        <meta charset="utf-8">
+        <meta name="keywords" description="curso web, JavaScript, js, Web Learning,">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="estilos.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
+	</head>
+	<body>
+	<div class="container">
+		<div class="cabe1">
+				<h2>7. Estructuras condicionales compuestas.<h2>
+		</div>
+		
+		<div class="next1">
+			Cuando se presenta la elección tenemos la opción de realizar una actividad u otra. Es decir tenemos actividades por el verdadero y por el falso de la condición. Lo más importante que hay que tener en cuenta es que se realizan las actividades de la rama del verdadero o las del falso, NUNCA se realizan las actividades de las dos ramas.<br>
+En una estructura condicional compuesta tenemos entradas, salidas, operaciones, tanto por la rama del verdadero como por la rama del falso.<br>
+<br>
+Ejemplo: Realizar un programa que lea dos números distintos y muestre el mayor de ellos:<br><br>
+<textarea class="show" style="height:550px;">
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+  var num1,num2;
+  num1=prompt('Ingrese el primer número:','');
+  num2=prompt('Ingrese el segundo número:','');
+  num1=parseInt(num1);
+  num2=parseInt(num2);
+  if (num1>num2)
+  {
+    document.write('el mayor es '+num1);
+  }
+  else
+  {
+    document.write('el mayor es '+num2);
+  }
+</script>
+</body>
+</html>
+</textarea>
+La función prompt retorna un string por lo que debemos convertirlo a entero cuando queremos saber cual de los dos valores es mayor numéricamente. En el lenguaje JavaScript una variable puede ir cambiando el tipo de dato que almacena a lo largo de la ejecución del programa.<br>
+Más adelante veremos qué sucede cuando preguntamos cuál de dos string es mayor.<br>
+Estamos en presencia de una ESTRUCTURA CONDICIONAL COMPUESTA ya que tenemos actividades por la rama del verdadero y del falso.<br>
+La estructura condicional compuesta tiene la siguiente codificación:
+<pre>
+if (&lt;condici&oacute;n&gt;) 
+{
+  &lt;Instruccion(es)&gt;
+}
+else
+{
+  &lt;Instruccion(es)&gt;
+}
+</pre>
+Es igual que la estructura condicional simple salvo que aparece la palabra clave “else” y posteriormente un bloque { } con una o varias instrucciones. <br>
+Si la condición del if es verdadera se ejecuta el bloque que aparece después de la condición, en caso que la condición resulte falsa se ejecuta la instrucción o bloque de instrucciones que indicamos después del else.
+</p>
+
+		</div>
+		<hr style="border:1px solid #ccc;">
+		<div class="footest">
+			<div class="row">
+		      	<div class="col-lg-4" >
+			        <p><a href="d6.html">Anterior</a></p>
+		      	</div>
+		      	<div class="col-lg-4">
+			        <p><a href="index.html">Retornar Inicio</a></p>
+		      	</div>
+		      	<div class="col-lg-4">
+			       	<p><a href="d8.html">Siguiente</a></p>
+		      	</div>
+		    </div>
+		</div>
+	
+	</div>
+	
+	</body>
+</html>

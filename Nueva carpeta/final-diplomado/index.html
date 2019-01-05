@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Aula Virtual</title>
+		<link rel="icon" type="image/png" href="icon.png"/>
+		<link rel="stylesheet" href="css.css" type="text/css">
+		<link href="css/bootstrap.min.css" rel="stylesheet"> 
+		<link rel="stylesheet" href="woothemes-FlexSlider-83b3cae/flexslider.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script type="text/javascript" src="woothemes-FlexSlider-83b3cae/jquery.flexslider-min.js"></script>
+		<script type="text/javascript" charset="utf-8">
+		  $(window).load(function() {
+		    $('.flexslider').flexslider({
+		        controlsContainer: '.flex-container'
+		    });
+		  });
+		</script>
+		<script type="text/javascript">
+			function validar(){
+
+				if (document.form.txtusuario.value == "usuario" && document.form.txtcontra.value==12345)
+				{
+				    window.open('pres.html');
+				    setTimeout(window.close(), 1000);
+				}
+	
+
+				else {
+
+					    alert('USUARIO: usuario ------- PASS: 12345');
+
+					document.form.submit;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<center>
+				<h1>Aul@ Virtual - Programaci&oacute;n Web</h1>
+				<div class="falsabarra"></div>
+				<h3>1<sup>ra</sup> Muestra de Proyectos Asignados:</h3>
+			</center>
+			<br/>
+			<div class="cuerpo">
+				<div class="userbox">				
+					<span class="inicia">Inicia sesi&oacute;n para visualizar proyectos</span>
+					<form class="formed" name="form" action="" method="post">
+						<input type="text" name="txtusuario" placeholder="Usuario">
+						<input type="password" name="txtcontra" placeholder="Contrase&ntilde;a">
+						<input type="submit" value="Entrar" onclick="validar()">  
+					</form>
+				</div>
+				<div class="">
+					<div class="slide">
+						<div class="flex-container">
+						    <div class="flexslider">
+						        <ul class="slides">
+									<li><img class="inslide" src="slide/Combined-Web-Languages.png" height="" width=""/></li>
+									<li><img class="inslide" src="slide/i9Kjbi93lbUeg.jpg" height="" width=""/></li>
+									<li><img class="inslide" src="slide/Need Code By PCbots.png" height="" width=""/></li>
+									<li><img class="inslide" src="slide/ProgrammingOOP_Wallpaper_Black_by_hexeno.png" height="" width=""/></li>
+									<li><img class="inslide" src="slide/web_developer_wallpaper__white__by_plusjack-d7bmuby.jpg" height="" width=""/></li>
+									<li><img class="inslide" src="slide/web-development-16786c4.jpg" height="" width=""/></li>
+								</ul>
+							</div>
+						</div>			
+					</div>
+					<br/>
+					<hr style="margin-top:40px; border:2px solid #555; width:95%;"/>
+					<div class="descripgral">
+						<div class="descrip">Descripci&oacute;n General</div>
+						<div style="margin:10px; padding-bottom:10px;">
+						Este sitio ha sido desarrollado como &iacute;ndice, para encaminar al visitante a los diferentes proyectos asignados durante todo el transcurso del diplomado de Introducci&oacute;n a la Programaci&oacute;n web, impartido por la Prof. Franshesca Corcino, perteneciente al cuerpo de docentes asignados a los CTCs por el Instituto Tecnol&oacute;gico de las Am&eacute;ricas.
+						</div>
+					</div>
+					<div class="mision">
+						<div class="descrip">Misi&oacute;n</div>
+						<div style="margin:10px; padding-bottom:10px;">
+						La misi&oacute;n este sitio es mostrar las asignaciones m&aacute;s relevantes, presentadas a trav&eacute;s de un sitio desarrollado como asignaci&oacute;n final del diplomado de Introducci&oacute;n a la Programaci&oacute;n web. 
+						</div>
+					</div>
+					<div class="vision">
+						<div class="descrip">Visi&oacute;n</div>
+						<div style="margin:10px; padding-bottom:10px;">
+						Nuestra visi&oacute;n representa el anhelo de que todo visitante, ya sea estudiante de programaci&oacute; o no, quede con la espectativa muy buena y constatada en cuanto a estos diplomados brindados por el CTC, el mismo a su vez estancia del gobierno.
+						</div>
+					</div>
+					<div class="valores">
+						<div class="descrip">Valores</div>
+						<div style="margin:10px; padding-bottom:10px;">
+						El objetivo general de este sitio es mostrar la asignaci&oacute;n final del diplomado de Introducci&oacute;n a la Programaci&oacute;n web, asignado por la Prof. Franshesca Corcino. Espero que la vista sea agradable para ganarme bien mis puntos.
+						</div>
+					</div>
+					<div class="valclass">
+						<div class="descrip">Valores de la clase</div>
+						<div style="margin:10px; padding-bottom:10px;">
+						El objetivo general de este sitio es mostrar la asignaci&oacute;n final del diplomado de Introducci&oacute;n a la Programaci&oacute;n web, asignado por la Prof. Franshesca Corcino. Espero que la vista sea agradable para ganarme bien mis puntos.
+						</div>
+					</div>
+				</div>	
+				<div class="pie">
+					<p class="ttopie">
+						Final Diplomado Introducci&oacute;n a la Programaci&oacute;n web<br/>
+						!Hard &copy; 2015
+					</p>
+				</div>	
+			</div>
+		</div>
+	
+	</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title> Calculadora Ctc </title>
+		<link rel="stylesheet" href="css.css" type="text/css">
+		<script type="text/javascript">
+			function calcula(operacion){
+			    var operando1 = document.calc.operando1.value
+			    var operando2 = document.calc.operando2.value 
+			    var result = eval(operando1 + operacion + operando2)
+			    document.calc.resultado.value = result
+			}
+		</script> 
+	</head>
+	<body>
+		
+			<table border="0" class="tabla">
+					<form name="calc">
+				<tr>
+					<th colspan="2"><span class="tit">Mini-Calculadora Virtual</span><hr></th>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="Text" name="operando1" size="10" class="op" placeholder="Operador 1">
+						<input type="Text" name="operando2" size="10" class="op" placeholder="Operador 2">
+						<br/>
+					<input type="Text" name="resultado" value="0" size="12" class="result"><br/></td>
+				</tr>
+				<tr>
+					<td width="120" style="border-right:2px ridge #aaa;" >	
+							
+							<input type="button" value="    1    " style="margin-top:7px;" disabled>
+							<input type="button" value="    2    " style="margin-top:7px;" disabled>
+							<input type="button" value="    3    " style="margin-top:7px;" disabled>
+							<br/>
+							<input type="button" value="    4    " style="margin-top:7px;" disabled>
+							<input type="button" value="    5    " style="margin-top:7px;" disabled>
+							<input type="button" value="    6    " style="margin-top:7px;" disabled>
+							<br/>
+							<input type="button" value="    7    " style="margin-top:7px;" disabled>
+							<input type="button" value="    8    " style="margin-top:7px;" disabled>
+							<input type="button" value="    9    " style="margin-top:7px;" disabled>
+							<br/>
+							<input type="button" value="    *    " style="margin-top:7px;" disabled>
+							<input type="button" value="    0    " style="margin-top:7px;" disabled>
+							<input type="button" value="    #   " style="margin-top:7px;" disabled>
+					</td>
+					<td width="50">
+							<input type="Button" name="mas" value="+" onclick="calcula('+')" class="cl">
+							<br/>
+							<input type="Button" name="menos" value="-" onclick="calcula('-')" class="cl">
+							<br/>
+							<input type="Button" name="mult" value="*" onclick="calcula('*')" class="cl">
+							<br/>
+							<input type="Button" name="div" value="/" onclick="calcula('/')" class="cl">
+							<br/>
+							<input type="reset" name="limpiar" value="C" class="cl">
+					</td>
+						</form>
+				</tr>	
+			</table>
+	
+	</body>
+</html>

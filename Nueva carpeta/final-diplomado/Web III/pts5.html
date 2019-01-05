@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html lang="es-es">
+    <head>
+        <title>JS Class - 5th Lesson</title>
+        <link rel="icon" type="image/png" href="images/js.png"/>
+        <meta charset="utf-8">
+        <meta name="keywords" description="curso web, JavaScript, js, Web Learning,">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="estilos.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
+	<script type="text/javascript" language="javascript">
+	function abrirVentana(url) {
+    window.open("ex2.html", "nuevo", "directories=no, location=no, menubar=no, scrollbars=yes, statusbar=no, tittlebar=no, width=400, height=400");
+	}
+	</script>
+	</head>
+	<body>
+	<div class="container">
+		<div class="cabe1">
+				<h2>5. Estructuras secuenciales de programaci&oacute;n - Problema a Resolver (PTS)<h2>
+		</div>
+		
+		<div class="next1">
+			Es de fundamental importancia realizar los programas. Viendo sólo los problemas resueltos en este curso de estudio no alcanza para convertirse en un programador de aplicaciones.
+<br><br>
+<b>PROBLEMAS</b><br>
+<ol>
+<li>
+ Realizar la carga del lado de un cuadrado, mostrar por pantalla el perímetro del mismo (El perímetro de un cuadrado se calcula multiplicando el valor del lado por cuatro)
+</li>
+<li>
+Escribir un programa en el cual se ingresen cuatro números, calcular e informar la suma de los dos primeros y el producto del tercero y el cuarto.
+</li>
+<li>
+Realizar un programa que lea cuatro valores numéricos e informar su suma y producto.
+</li>
+<li>
+Se debe desarrollar un programa que pida el ingreso del precio de un artículo y la cantidad que lleva el cliente. Mostrar lo que debe abonar el comprador (Ingresar por teclado un precio sin decimales, es decir un entero: 2, 7, 90 etc.)
+</li>
+</ol>
+
+<br/><br/>
+		
+			<a href="javascript:void(0);" onclick="if (this.parentNode.nextSibling.childNodes[0].style.display != '') { this.parentNode.nextSibling.childNodes[0].style.display = ''; } else { this.parentNode.nextSibling.childNodes[0].style.display = 'none';}" ><font style="color:#00f;">Soluci&oacute;n</font></a>
+			</div><div><div class="spoiler" style="display: none;">
+			<textarea class="show" style="height:3200px; font-family:couriel;">
+Problema 1.
+
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+  var lado;
+  lado=prompt('Ingrese medida del lado:','');
+  var perimetro;
+  perimetro=lado*4;
+  document.write('Su perímetro es:');
+  document.write(perimetro);
+</script>
+
+</body>
+</html>
+     
+
+
+Problema 2.
+
+
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+  var num1;
+  var num2;
+  var num3;
+  var num4;
+  num1=prompt('Ingrese primer valor:','');
+  num2=prompt('Ingrese segundo valor:','');
+  num3=prompt('Ingrese tercer valor:','');
+  num4=prompt('Ingrese cuarto valor:','');
+  var suma;
+  suma=parseInt(num1)+parseInt(num2);
+  var producto;
+  producto=parseInt(num3)*parseInt(num4);
+  document.write('La suma de los dos primeros valores es:');
+  document.write(suma);
+  document.write('<br>');
+  document.write('El producto del tercer y cuarto valor es:');
+  document.write(producto);
+</script>
+
+</body>
+</html>
+
+
+
+Problema 3.
+
+
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+  var num1;
+  var num2;
+  var num3;
+  var num4;
+  num1=prompt('Ingrese primer valor:','');
+  num2=prompt('Ingrese segundo valor:','');
+  num3=prompt('Ingrese tercer valor:','');
+  num4=prompt('Ingrese cuarto valor:','');
+  var suma;
+  suma=parseInt(num1)+parseInt(num2)+parseInt(num3)+parseInt(num4);
+  var producto;
+  producto=parseInt(num1)*parseInt(num2)*parseInt(num3)*parseInt(num4);
+  document.write('La suma de los cuatro valores es:');
+  document.write(suma);
+  document.write('<br>');
+  document.write('El producto de los cuatro valor es:');
+  document.write(producto);
+</script>
+
+</body>
+</html>
+
+
+
+Problema 4.     
+
+
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+  var precio;
+  var cantidad;
+  precio=prompt('Ingrese precio del artículo','');
+  cantidad=prompt('Ingrese la cantidad de artículos a llevar:','');
+  var importe;
+  importe=parseInt(precio)*parseInt(cantidad);
+  document.write('Debe abonar:');
+  document.write(importe);
+</script>
+
+</body>
+</html>
+     
+
+
+Problema 5.     
+
+
+html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+  var total1=0;
+  var x=0;
+  var nro;
+  while(x<3)
+  {
+    nro=prompt('Ingrese valor de la primer lista:','');
+    nro=parseInt(nro);
+    total1=total1+nro;
+    x=x+1;
+  }
+  var total2=0;
+  x=0;
+  while(x<3)
+  {
+    nro=prompt('Ingrese valor de la segunda lista:','');
+    nro=parseInt(nro);
+    total2=total2+nro;
+    x=x+1;
+  }
+  if (total1>total1)
+  {
+    document.write('Tiene mayor valor la lista1');
+  }
+  else
+  {
+    if (total1<total2)
+    {
+      document.write('Tiene mayor valor la lista2');
+    }
+    else
+    {
+      document.write('Tienen el mismo valor acumuado las dos listas');
+    }
+  }
+</script>
+
+</body>
+</html>
+			</textarea>
+			</div></div>
+		</div>
+		<hr style="border:1px solid #ccc;">
+		<div class="footest">
+			<div class="row">
+		      	<div class="col-lg-4">
+			        <p><a href="pts4.html">Anterior</a></p>
+		      	</div>
+		      	<div class="col-lg-4">
+			        <p><a href="index.html">Retornar Inicio</a></p>
+		      	</div>
+		      	<div class="col-lg-4">
+			       	<p><a href="pts6.html">Siguiente</a></p>
+		      	</div>
+		    </div>
+		</div>
+	
+	</div>
+	
+	</body>
+</html>

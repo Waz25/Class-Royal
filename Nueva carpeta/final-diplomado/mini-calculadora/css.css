@@ -1,0 +1,45 @@
+.cont {
+	margin: 0 auto;	
+	width:200px;
+	height:200%;
+}
+.tabla {
+	margin: 25px auto;	
+  	background-color:#0ee;
+  	padding:10px;
+  	border:1px solid #aaa;
+  	border-radius:15px;
+  	box-shadow: 0px 20px 30px #bbb;
+}
+@font-face {
+	font-family:"Lobster_1.3";
+	src:url("Lobster_1.3.otf") format("opentype");
+
+}
+.result {
+	background-color:#ff0;
+	height:30px;
+	width:250px;
+	text-align:right;
+	font-weight: bold;
+	border:3px inset #0070ee;
+}
+th {
+	text-align: center;
+	padding:8px;
+}
+.tit {
+	font-size:23px;
+	font-weight:none;
+	font-family:"Lobster_1.3";
+}
+.cl {
+	width:100%;
+}
+.op {
+	margin-bottom:10px;
+	height:25px;
+	text-align:center;
+	border:;
+	border-radius:5px;
+}

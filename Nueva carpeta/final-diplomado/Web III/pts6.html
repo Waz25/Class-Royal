@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="es-es">
+    <head>
+        <title>JS Class - 6th Lesson</title>
+        <link rel="icon" type="image/png" href="images/js.png"/>
+        <meta charset="utf-8">
+        <meta name="keywords" description="curso web, JavaScript, js, Web Learning,">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="estilos.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
+	<script type="text/javascript" language="javascript">
+	function abrirVentana(url) {
+    window.open("ex2.html", "nuevo", "directories=no, location=no, menubar=no, scrollbars=yes, statusbar=no, tittlebar=no, width=400, height=400");
+	}
+	</script>
+	</head>
+	<body>
+	<div class="container">
+		<div class="cabe1">
+				<h2>6. Estructuras condicionales simples - Problema a Resolver (PTS)<h2>
+		</div>
+		
+		<div class="next1">
+			<ol>
+<li>
+Se ingresan tres notas de un alumno, si el promedio es mayor o igual a siete mostrar el mensaje 'Promocionado'. Tener en cuenta que para obtener el promedio debemos operar suma=nota1+nota2+nota3; y luego hacer promedio=suma/3;<br>
+Cuando cargamos una nota y queremos convertir inmediatamente el valor ingresado a entero podemos hacer:<br>
+nota1=prompt('Ingrese primer nota:','');<br>
+nota1=parseInt(nota1);
+</li>
+<li>
+Solicitar que se ingrese dos veces una clave. Mostrar un mensaje si son iguales (tener en cuenta que para ver si dos variables tienen el mismo valor almacenado debemos utilizar el operador ==)
+</li>
+</ol>
+
+<br/><br/>
+		
+			<a href="javascript:void(0);" onclick="if (this.parentNode.nextSibling.childNodes[0].style.display != '') { this.parentNode.nextSibling.childNodes[0].style.display = ''; } else { this.parentNode.nextSibling.childNodes[0].style.display = 'none';}" ><font style="color:#00f;">Soluci&oacute;n</font></a>
+			</div><div><div class="spoiler" style="display: none;">
+			<textarea class="show" style="height:500px; font-family:couriel;">
+Problema 1.
+
+
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+  var nota1;
+  var nota2;
+  var nota3;
+  nota1=prompt('Ingrese primer nota','');
+  nota1=parseInt(nota1);
+  nota2=prompt('Ingrese segunda nota','');
+  nota2=parseInt(nota2);
+  nota3=prompt('Ingrese tercer nota','');
+  nota3=parseInt(nota3);
+  var suma;
+  suma=nota1+nota2+nota3; 
+  var promedio;
+  promedio=suma/3;
+  if (promedio>=7)
+  {
+    document.write('Promocionado');
+  }
+</script>
+
+</body>
+</html>
+     
+
+
+Problema 2.
+
+
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+  var clave1;
+  var clave2;
+  clave1=prompt('Ingrese una clave:','');
+  clave2=prompt('Repita el ingreso de la clave:','');
+  if (clave1==clave2)
+  {
+    document.write('Ingreso las dos claves iguales');
+  } 
+</script>
+
+</body>
+</html>
+			</textarea>
+			</div></div>
+		</div>
+		<hr style="border:1px solid #ccc;">
+		<div class="footest">
+			<div class="row">
+		      	<div class="col-lg-4">
+			        <p><a href="pts8.html">Anterior</a></p>
+		      	</div>
+		      	<div class="col-lg-4">
+			        <p><a href="index.html">Retornar Inicio</a></p>
+		      	</div>
+		      	<div class="col-lg-4">
+			       	<p><a href="pts7.html">Siguiente</a></p>
+		      	</div>
+		    </div>
+		</div>
+	
+	</div>
+	
+	</body>
+</html>

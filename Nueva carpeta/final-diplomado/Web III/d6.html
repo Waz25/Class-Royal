@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="es-es">
+    <head>
+        <title>JS Class - 6th Lesson</title>
+        <link rel="icon" type="image/png" href="images/js.png"/>
+        <meta charset="utf-8">
+        <meta name="keywords" description="curso web, JavaScript, js, Web Learning,">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="estilos.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
+	</head>
+	<body>
+	<div class="container">
+		<div class="cabe1">
+				<h2>6. Estructuras condicionales simples.<h2>
+		</div>
+		
+		<div class="next1">
+			No todos los problemas pueden resolverse empleando estructuras secuenciales. Cuando hay que tomar una decisión aparecen las estructuras condicionales.<br>
+En nuestra vida diaria se nos presentan situaciones donde debemos decidir.<br>
+¿Elijo la carrera A o la carrera B ?<br>
+¿Me pongo este pantalón ?<br>
+¿Entro al sitio A o al sitio B ?<br>
+Para ir al trabajo, ¿elijo el camino A o el camino B ?<br>
+Al cursar una carrera, ¿elijo el turno mañana, tarde o noche ?<br>
+<br>
+Por supuesto que en un problema se combinan estructuras secuenciales y condicionales.<br>
+Cuando se presenta la elección tenemos la opción de realizar una actividad o no realizarla.<br>
+En una estructura CONDICIONAL SIMPLE por el camino del verdadero hay actividades y por el camino del falso no hay actividades. Por el camino del verdadero pueden existir varias operaciones, entradas y salidas, inclusive ya veremos que puede haber otras estructuras condicionales.
+<br>
+Ejemplo: Realizar la carga de una nota de un alumno. Mostrar un mensaje que aprobó si tiene una nota mayor o igual a 4:<br><br>
+<textarea class="show">
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+  var nombre;
+  var nota;
+  nombre=prompt('Ingrese nombre:','');
+  nota=prompt('Ingrese su nota:','');
+  if (nota>=4)
+  {
+    document.write(nombre+' esta aprobado con un '+nota);
+  }
+</script>
+</body>
+</html>
+</textarea>
+Siempre debemos tener en cuenta que en la condición del if deben intervenir una variable un operador relacional y otra variable o valor fijo.<br>
+Otra cosa que hemos incorporado es el operador + para cadenas de caracteres:
+<pre>
+document.write(nombre+' esta aprobado con un '+nota);
+</pre>
+Con esto hacemos más corto la cantidad de líneas de nuestro programa, recordemos que veníamos haciéndolo de la siguiente forma:
+<pre>
+document.write(nombre);
+document.write(' esta aprobado con un ');
+document.write(nota);
+</pre>
+</p>
+		</div>
+		<hr style="border:1px solid #ccc;">
+		<div class="footest">
+			<div class="row">
+		      	<div class="col-lg-4" >
+			        <p><a href="d5.html">Anterior</a></p>
+		      	</div>
+		      	<div class="col-lg-4">
+			        <p><a href="index.html">Retornar Inicio</a></p>
+		      	</div>
+		      	<div class="col-lg-4">
+			       	<p><a href="d7.html">Siguiente</a></p>
+		      	</div>
+		    </div>
+		</div>
+	
+	</div>
+	
+	</body>
+</html>

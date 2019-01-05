@@ -1,0 +1,246 @@
+<?php 
+session_start(); 
+if (isset($_SESSION['user'])) {
+	$con=mysqli_connect("localhost","root","","movimiento") or die("Lo sentimos. Problema en la coneccion");
+    $registro=mysqli_query($con,"select * from usuario where nick='$_SESSION[user]'") or die(mysqli_error($con));
+    $reg=mysqli_fetch_array($registro); 
+    
+}
+?>
+<!DOCTYPE html>
+<html lang="es-es">
+	<head>
+        <link rel="icon" type="image/png" href="logo.png"/>
+        <title>Movimiento Fuerza Integral (2016-2020)</title>
+        <meta charset="utf-8">
+        <meta name="keywords" description="Movimiento Integral Santo Domingo, Santo Domingo, República Dominicana, Santo Domingo Norte, Movimiento Integral, Política, 2016-2020">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="stilos.css" type="text/css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
+
+	</head>
+	<body >
+		
+		<div class="head hidden-xs">
+			<div class="logocont" align="right">
+				<a href="index.php"><img src="logo.png" height="200" width="280" style="margin:0px; float:left;" /></a>
+			</div>
+			<div class="text-cont">
+				<h1 class="text-head">Movimiento Fuerza Integral</h1><br/>
+				<h4 class="text-head2">Lema: Porque es justa nuestra voluntad...</h4><br/>
+				<h4 class="text-head2">¡Para que la justicia triunfe siempre!</h4><br/>
+			</div>
+			<?php if (isset($_SESSION['user'])) { ?>
+				<div class="logged-right">
+				 
+                    <div class="dropdown">
+                                <span style="color:#000;">Bienvenido:</span> <span class="btn btn-link dropdown-toggle" id="menu1" data-toggle="dropdown" style="color:#0070ff;"><?php echo  $reg['nick']; ?>  <span class="glyphicon glyphicon-chevron-down"></span></span><br/>
+								
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+									<li role="presentation" tabindex="-1">
+									   <div stye="float:left;" align="center">
+									        <a href="https://gestion-academica-miguelcola.c9.io/<?php echo $reg['foto']; ?>"><img stye="float:left;" height="120" width="120" class="img-circle img-user" title="<?php echo $reg['nick']; ?>" src="<?php echo $reg['foto']; ?>"></a>
+									          <span class="glyphicon glyphicon-user"> <span class="pest" stye="clear:left;"><b><?php echo $reg['nick']; ?></b></span></span>
+									   </div>
+									</li>
+                                    <li role="presentation" tabindex="-1" class="divider"></li>
+                                    <a href=""><li role="presentation" tabindex="-1">Editar Perfil</li></a>
+									<a href="close.php"><li role="presentation" tabindex="-1">Cerrar</li></a>
+                                </ul>
+        			</div>
+                    
+				</div>
+			<?php } else { ?>
+
+				<div class="right-unlogged">
+				Aquí va el slider automatico
+				</div>
+
+			<?php } ?>
+		</div>
+		<div class="head2 hidden-xs">
+			<ul class="nav nav-tabs nav-justified">
+				<li class="active"><a href="index.php"><span class="glyphicon glyphicon-home"> <span class="pest">INICIO</span></span></a></li>
+				<li><a href=""><span class="glyphicon glyphicon-bookmark"> <span class="pest">¿NOSOTROS?</span></span></a></li>
+				<li><a href="formcent.php"><span class="glyphicon glyphicon-flag"> <span class="pest">FOROS</span></span></a></li>
+				<li><a href="formprof.php"><span class="glyphicon glyphicon-user"> <span class="pest">INICIA</span></span></a></li>
+			</ul>
+			
+		</div>
+		<nav class="navbar-inverse navbar-default visible-xs">
+            <div class="container-fluid ">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Navegacion</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand little" href="index.php" font-color="black">Movimiento Fuerza Integral</a>
+                </div>
+            
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="">INICIO</a></li> 
+                <li ><a href="registro.php">REGISTRO</a></li> 
+                <li ><a href="registro.php">REGISTRO</a></li> 
+                <li ><a href="registro.php">REGISTRO</a></li> 
+              </ul>
+              
+            </div>
+            </div>
+        </nav>
+		<div class="container">
+			<div class="incontainer hidden-xs" >
+				<br/>
+				<br/>
+				<br/>
+				<ol class="breadcrumb">
+                    <li><a href="index.php">Inicio</a></li>
+                    <li class="active">Nuevo Registro</li>
+                </ol>
+                <div class="head-title">
+                	<h3>
+                		<?php if (isset($_REQUEST['datos'])) { echo 'Personalización de Datos'; } else { echo 'Bandeja de Notificaciones';} ?>
+                	
+                	</h3>
+                </div>
+				<div class="left-m">
+					<div class="m-item">
+						<a href="bandeja.php?datos=true"><span class="m-letter">Mis Datos</span><a/>
+					</div>
+					<div class="m-item">
+						<a href=""><span class="m-letter">Opción</span><a/>
+					</div>
+					<div class="m-item">
+						<a href=""><span class="m-letter">Opción</span><a/>
+					</div>
+					<div class="m-item">
+						<a href=""><span class="m-letter">Opción</span><a/>
+					</div>
+					
+					<?php if (isset($_SESSION['user'])) { ?>
+                    <br/>
+				<br/>
+					<div class="anuncioo" style="background:; margin-top:;">
+					<span style="background:#FFFFFF; margin-top:30px;">
+					<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="150" height="491" title="anuncio">
+					  <param name="movie" value="anuncio.swf">
+					  <param name="quality" value="high">
+					  <embed src="anuncio.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="150" height="491"></embed>
+					</object>
+					</span>
+					</div>
+                    
+                	<?php } else { ?>
+				
+						<div class="log-form" align="center">
+								<form action="letsin.php" method="post" >
+								<img src="pertenece.png" height="85" width="110"><br/><br/>
+								<p style="color:#fff; font-weight: bold; font-family: sans-serif;">¿Participas? ¡Entra!</p>
+								<input class="log-inp" type="text" placeholder="Usuario" name="user">
+								<input class="log-inp" type="password" placeholder="Contraseña" name="pass">	
+								<input style="color:#000; width:150px" type="submit" value="Entrar">
+							</form>
+							<p style=" margin-top:10px; font-weight:bold; font-family: sans-serif;" >
+								<a style="color:#00f;" href="registro.php" title="Registro de nuevo usuario">O bien, Registrate!</a>
+							</p>
+						</div>
+
+					<?php } ?>	
+				
+				</div>
+				
+				<div class="right-a">
+					
+				<?php if (isset($_REQUEST['datos'])) { ?>	
+					<div class="my-form">
+						<form role="form" action="edit1.php" method="post">
+							<div class="form-group" style="margin-left:143px;">
+									<img src="<?php echo $reg['foto']; ?>" height="120" width="120" class="img-thumbnail"/>
+									<input type="file" name="imagen">
+								</div>
+							</div>
+							<div class="form-group" style="margin-bottom:10px;">
+								<label for="nick" class="col-sm-2 control-label" >Nick:</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control"  name="nick" value="<?php echo $reg['nick']; ?>" >
+								</div>
+							</div>
+							<div class="form-group" >
+								<label for="nombre" class="col-sm-2 control-label">Nombre:</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control"  name="nombre" value="<?php echo $reg['nombre']; ?>" >
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="password" class="col-sm-2 control-label">Contraseña:</label>
+								<div class="col-sm-9">
+									<input type="password" class="form-control"  name="password" value="<?php echo $reg['passw']; ?>" >
+									<input type="password" class="form-control"  name="password" placeholder="Nueva Contraseña" >
+									<input type="password" class="form-control"  name="password" placeholder="Repetir Nueva Contraseña" >
+								</div>
+							</div>	
+														
+							<br />
+							<br />
+							<br />
+							<br />
+							
+							<div class="form-group">
+								<label for="correo" class="col-sm-2 control-label">Correo:</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" name="email" value="<?php echo $reg['correo']; ?>" >
+								</div>
+							</div>	
+							<div class="form-group">
+								<label for="telefono" class="col-sm-2 control-label">Teléfono:</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" name="tel" value="<?php echo $reg['telefono']; ?>" >
+								</div>
+							</div>	
+							<div class="form-group">
+								<label for="ciudad" class="col-sm-2 control-label">Ciudad:</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" name="city" value="<?php echo $reg['ciudad']; ?>">
+								</div>
+							</div>	
+							<br />
+							<br />
+							<br />
+							<div class="form-group" style="margin-top:70px; ">
+								<label for="ciudad" class="col-sm-2 control-label"></label>
+								<div class="col-sm-9">	
+									<input type="submit" class="btn btn-default" style="border: 1px solid #000;" value="Guardar Cambios"/>  
+									<button type="reset" class="btn btn-default" style="background-color:#ddd; border: 1px solid #000;">Volver</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				<?php } ?>
+				</div>
+
+			</div>
+			<div class="incontainer2 visible-xs"> 
+					<br />
+							<br />
+							<br />
+							<br />
+							Señores, Solo esto es lo que se muestra cuando el dispositivo es pequeño.
+							<br />
+							<br />
+							<br />
+							<br />
+			</div>
+		</div>
+	<footer class="miFooter navbar navbar-default navbar-fixed-bottom" role="navigation">
+      	<p style="text-align:center; color:#000;">
+       		<b>Movimiento Fuerza Integral  -  Todos los Derechos Reservados</b><br/>
+       		Distrito Munidipal La Victoria, Santo Domingo Norte, Provincia Sto. Dgo., República Dominicana
+       	</p>    
+    </footer>
+  	<script src="JS/jquery.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+	</body>
+</html>
